@@ -1,0 +1,25 @@
+{
+  "projectName": "@wendell_adriell/jodit-vue",
+  "projectOwner": "WendellAdriel",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "WendellAdriel",
+      "name": "Wendell Adriel",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/11641518?v=4",
+      "profile": "https://wendelladriel.com",
+      "contributions": [
+        "code",
+        "doc",
+        "example",
+        "ideas"
+      ]
+    }
+  ]
+}
