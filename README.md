@@ -10,14 +10,14 @@ Vue Wrapper for the **[Jodit Editor](https://github.com/xdan/jodit)**
 Install **jodit** and this wrapper:
 
 ```
-yarn add jodit @wendell_adriel/jodit-vue
+yarn add jodit jodit-vue
 ```
 
 ## Import and use it
 
 ```
 import Vue from 'vue'
-import JoditVue from '@wendell_adriel/jodit-vue'
+import JoditVue from 'jodit-vue'
 
 Vue.use(JoditVue)
 ```
@@ -32,7 +32,7 @@ Instead of using `Vue.use(JoditVue)` you can use the component locally
 </template>
 
 <script>
-import JoditVue from '@wendell_adriel/jodit-vue'
+import JoditVue from 'jodit-vue'
 
 export default {
     name: 'app',
@@ -74,7 +74,7 @@ When providing the buttons to show on the editor you will need to provide an arr
 </template>
 
 <script>
-import JoditVue from '@wendell_adriel/jodit-vue'
+import JoditVue from 'jodit-vue'
 
 export default {
     name: 'app',
@@ -107,7 +107,7 @@ If you need to create custom buttons to the editor, you can create them and prov
 </template>
 
 <script>
-import JoditVue from '@wendell_adriel/jodit-vue'
+import JoditVue from 'jodit-vue'
 
 export default {
     name: 'app',
@@ -145,7 +145,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars1.githubusercontent.com/u/11641518?v=4" width="100px;"/><br /><sub><b>Wendell Adriel</b></sub>](https://wendelladriel.com)<br />[💻](https://github.com/WendellAdriel/@wendell_adriell/jodit-vue/commits?author=WendellAdriel "Code") [📖](https://github.com/WendellAdriel/@wendell_adriell/jodit-vue/commits?author=WendellAdriel "Documentation") [💡](#example-WendellAdriel "Examples") [🤔](#ideas-WendellAdriel "Ideas, Planning, & Feedback") |
+| [<img src="https://avatars1.githubusercontent.com/u/11641518?v=4" width="100px;"/><br /><sub><b>Wendell Adriel</b></sub>](https://wendelladriel.com)<br />[💻](https://github.com/WendellAdriel/jodit-vue/commits?author=WendellAdriel "Code") [📖](https://github.com/WendellAdriel/jodit-vue/commits?author=WendellAdriel "Documentation") [💡](#example-WendellAdriel "Examples") [🤔](#ideas-WendellAdriel "Ideas, Planning, & Feedback") |
 | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 

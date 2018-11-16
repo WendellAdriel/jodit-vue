@@ -1,5 +1,5 @@
 {
-  "name": "@wendell_adriel/jodit-vue",
+  "name": "jodit-vue",
   "version": "1.0.0",
   "description": "Vue wrapper for Jodit Editor",
   "main": "./dist/jodit-vue.umd.min.js",
