@@ -2,7 +2,7 @@
   "name": "@wendell_adriel/jodit-vue",
   "version": "1.0.0",
   "description": "Vue wrapper for Jodit Editor",
-  "main": "./dist/jodit-vue.js",
+  "main": "./dist/jodit-vue.umd.min.js",
   "files": [
     "dist",
     "src"
@@ -19,7 +19,7 @@
     "contributors:generate": "all-contributors generate",
     "contributors:add": "all-contributors add",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --mode production --dest dist --target lib --name jodit-vue --dashboard --entry ./src/JoditVue.vue",
     "lint": "vue-cli-service lint",
     "prepublish": "yarn lint && yarn build"
   },

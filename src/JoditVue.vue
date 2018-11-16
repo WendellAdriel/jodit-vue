@@ -7,7 +7,7 @@ import 'jodit/build/jodit.min.css'
 import Jodit from 'jodit'
 
 export default {
-  name: 'JoditEditor',
+  name: 'JoditVue',
 
   props: {
     value: { type: String, required: true },

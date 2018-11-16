@@ -1,10 +1,16 @@
 module.exports = {
   lintOnSave: undefined,
 
+  configureWebpack: {
+    output: {
+      libraryExport: 'default'
+    }
+  },
+
   chainWebpack: config => {
-    config.entryPoints.delete('app')
-    config.entry('jodit-vue')
-      .add('./src/JoditEditor.vue')
-      .end()
+    config.externals({
+      ...config.get('externals'),
+      'jodit': 'jodit'
+    })
   }
 }
