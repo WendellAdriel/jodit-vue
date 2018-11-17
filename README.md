@@ -64,7 +64,7 @@ You can check and test it on **[Codesanbox](https://codesandbox.io/s/jv0l1r86wv)
 
 ## Using without a build system
 
-If you don't use a build system on your app, you can also use Jodit Vue without problems, check and test it on this **[JsFiddle](https://jsfiddle.net/gnL6pqrd/)**.
+If you don't use a build system on your app, you can also use Jodit Vue without problems, check and test it on this **[JsFiddle](https://jsfiddle.net/kj0tma67/)**.
 
 ## Component Properties
 
