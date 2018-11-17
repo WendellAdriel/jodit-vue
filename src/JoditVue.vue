@@ -11,7 +11,7 @@ export default {
   props: {
     value: { type: String, required: true },
     id: { type: String, default: 'editor' },
-    buttons: { type: Array, default: null },
+    buttons: { type: String, default: null },
     extraButtons: { type: Array, default: null },
     buttonSize: { type: String, default: 'middle' },
     showCharsCounter: { type: Boolean, default: true },
@@ -20,17 +20,6 @@ export default {
   },
 
   computed: {
-    formattedButtons () {
-      let buttons = ''
-
-      this.buttons.forEach(buttonGroup => {
-        const formatted = buttonGroup.join(',')
-        buttons += `${formatted},|,`
-      })
-
-      return buttons
-    },
-
     editorConfig () {
       const config = {
         toolbarButtonSize: this.buttonSize,
@@ -39,7 +28,7 @@ export default {
         showXPathInStatusbar: this.showXpath
       }
 
-      if (this.buttons) config.buttons = this.formattedButtons
+      if (this.buttons) config.buttons = this.buttons
       if (this.extraButtons) config.extraButtons = this.extraButtons
       return config
     }
