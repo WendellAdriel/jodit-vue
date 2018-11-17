@@ -18,7 +18,9 @@ export default {
       css: true,
       compileTemplate: true
     }),
-    buble(),
+    buble({
+      objectAssign: 'Object.assign'
+    }),
     uglify()
   ]
 }
