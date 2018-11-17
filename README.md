@@ -1,7 +1,15 @@
 # Jodit Vue
 
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/WendellAdriel/time-storage/blob/master/LICENSE)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/WendellAdriel/jodit-vue/blob/master/LICENSE)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+
+[![version][version-badge]][package]
+[![downloads][downloads-badge]][npmcharts]
+[![size][size-badge]][unpkg-dist] [![gzip size][gzip-badge]][unpkg-dist]
+
+[![Watch on GitHub][github-watch-badge]][github-watch]
+[![Star on GitHub][github-star-badge]][github-star]
+[![Tweet][twitter-badge]][twitter]
 
 Vue Wrapper for the **[Jodit Editor](https://github.com/xdan/jodit)**
 
@@ -15,7 +23,10 @@ yarn add jodit jodit-vue
 
 ## Import and use it
 
+Since this component is just a wrapper, you need to include the `css` of the **Jodit Editor** on your app for it to work properly, if you're using `vue-cli` to create your app, or another build system you can import it directly or add a `link` tag with the `css` file provided by the **Jodit Editor** package.
+
 ```
+import 'jodit/build/jodit.min.css'
 import Vue from 'vue'
 import JoditVue from 'jodit-vue'
 
@@ -32,6 +43,7 @@ Instead of using `Vue.use(JoditVue)` you can use the component locally
 </template>
 
 <script>
+import 'jodit/build/jodit.min.css'
 import JoditVue from 'jodit-vue'
 
 export default {
@@ -52,15 +64,15 @@ export default {
 
 If you pass only the `v-model` for the component, it will load all the editor features, if you want to customize it, you can do it with its properties that are listed below, but all of them are not required, just if you want to customize your editor that you will need them:
 
-| Property | Type   | Default Value | Description                                                                                                           |
-| :------: | :----: | :-----------: | :-------------------------------------------------------------------------------------------------------------------: |
-| id       | String | 'editor'      | The ID of the editor `div` wrapper, you need to specify it if you want to mount more than one editor on the same page |
-| buttons  | Array  | `null`        | The buttons that you want to show on toolbar, if this is not provided, all the buttons will be shown                  |
-| extraButtons | Array | `null`     | If you need to create and display custom buttons you can pass an array with your custom buttons to this property      |
-| buttonSize | String  | 'middle'   | The size of the buttons on the toolbar, by default it's 'middle' but you can pass the values 'small' or 'large'       |
-| showCharsCounter | Boolean | true | If you want to show the chars counter on the bottom of the editor                                                     |
-| showWordsCounter | Boolean | true | If you want to show the words counter on the bottom of the editor                                                     |
-| showXpath        | Boolean | true | If you want to show the XPath of the current selection on the bottom of the editor                                    |
+| Property         | Type    | Default Value | Description                                                                                                           |
+| :--------------: | :-----: | :-----------: | :-------------------------------------------------------------------------------------------------------------------: |
+| id               | String  | 'editor'      | The ID of the editor `div` wrapper, you need to specify it if you want to mount more than one editor on the same page |
+| buttons          | Array   | `null`        | The buttons that you want to show on toolbar, if this is not provided, all the buttons will be shown                  |
+| extraButtons     | Array   | `null`        | If you need to create and display custom buttons you can pass an array with your custom buttons to this property      |
+| buttonSize       | String  | 'middle'      | The size of the buttons on the toolbar, by default it's 'middle' but you can pass the values 'small' or 'large'       |
+| showCharsCounter | Boolean | true          | If you want to show the chars counter on the bottom of the editor                                                     |
+| showWordsCounter | Boolean | true          | If you want to show the words counter on the bottom of the editor                                                     |
+| showXpath        | Boolean | true          | If you want to show the XPath of the current selection on the bottom of the editor                                    |
 
 #### Buttons property
 
@@ -74,6 +86,7 @@ When providing the buttons to show on the editor you will need to provide an arr
 </template>
 
 <script>
+import 'jodit/build/jodit.min.css'
 import JoditVue from 'jodit-vue'
 
 export default {
@@ -107,6 +120,7 @@ If you need to create custom buttons to the editor, you can create them and prov
 </template>
 
 <script>
+import 'jodit/build/jodit.min.css'
 import JoditVue from 'jodit-vue'
 
 export default {
@@ -150,3 +164,17 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
+
+[downloads-badge]: https://img.shields.io/npm/dm/jodit-vue.svg?style=flat-square
+[npmcharts]: http://npmcharts.com/compare/jodit-vue
+[version-badge]: https://img.shields.io/npm/v/jodit-vue.svg?style=flat-square
+[package]: https://www.npmjs.com/package/jodit-vue
+[size-badge]: http://img.badgesize.io/https://unpkg.com/jodit-vue/dist/jodit-vue.js?style=flat-square&label=size
+[unpkg-dist]: https://unpkg.com/jodit-vue/dist/
+[gzip-badge]: http://img.badgesize.io/https://unpkg.com/jodit-vue/dist/jodit-vue.js?label=gzip%20size&style=flat-square&compression=gzip
+[github-watch-badge]: https://img.shields.io/github/watchers/WendellAdriel/jodit-vue.svg?style=social
+[github-watch]: https://github.com/WendellAdriel/jodit-vue/watchers
+[github-star-badge]: https://img.shields.io/github/stars/WendellAdriel/jodit-vue.svg?style=social
+[github-star]: https://github.com/WendellAdriel/jodit-vue/stargazers
+[twitter]: https://twitter.com/intent/tweet?text=Check%20out%20jodit-vue!%20https://github.com/WendellAdriel/jodit-vue%20%F0%9F%91%8D
+[twitter-badge]: https://img.shields.io/twitter/url/https/github.com/WendellAdriel/jodit-vue.svg?style=social
