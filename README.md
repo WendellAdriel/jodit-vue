@@ -53,7 +53,7 @@ export default {
 
     data () {
         return {
-            content: '<h1>TEST</h1>'
+            content: '<h1>Hello Jodit Vue</h1>'
         }
     }
 }
@@ -73,16 +73,13 @@ If you pass only the `v-model` for the component, it will load all the editor fe
 | Property         | Type    | Default Value | Description                                                                                                           |
 | :--------------: | :-----: | :-----------: | :-------------------------------------------------------------------------------------------------------------------: |
 | id               | String  | 'editor'      | The ID of the editor `div` wrapper, you need to specify it if you want to mount more than one editor on the same page |
-| buttons          | String  | `null`        | The buttons that you want to show on toolbar, if this is not provided, all the buttons will be shown                  |
+| buttons          | Array   | `null`        | The buttons that you want to show on toolbar, if this is not provided, all the buttons will be shown                  |
 | extraButtons     | Array   | `null`        | If you need to create and display custom buttons you can pass an array with your custom buttons to this property      |
-| buttonSize       | String  | 'middle'      | The size of the buttons on the toolbar, by default it's 'middle' but you can pass the values 'small' or 'large'       |
-| showCharsCounter | Boolean | true          | If you want to show the chars counter on the bottom of the editor                                                     |
-| showWordsCounter | Boolean | true          | If you want to show the words counter on the bottom of the editor                                                     |
-| showXpath        | Boolean | true          | If you want to show the XPath of the current selection on the bottom of the editor                                    |
+| config           | Object  | `{}`          | The config object that has all the other configurations for the editor                                                |
 
 #### Buttons property
 
-When providing the buttons to show on the editor you will need to provide a string with the buttons that you want to show, separated by a comma. The button names can be found **[here](https://xdsoft.net/jodit/play.html)**. You can also pass a `|` to put a divider between the buttons.
+When providing the buttons to show on the editor you will need to provide an array with the buttons that you want to show. The button names can be found **[here](https://xdsoft.net/jodit/play.html)**. You can also pass a `|` to put a divider between the buttons.
 
 ```
 <template>
@@ -102,8 +99,8 @@ export default {
 
     data () {
         return {
-            content: '<h1>TEST</h1>',
-            buttons: 'source,|,bold,strikethrough,underline,italic,|,font,fontsize,brush'
+            content: '<h1>Hello Jodit Vue</h1>',
+            buttons: ['source', 'image', '|', 'bold', 'underline', 'italic']
         }
     }
 }
@@ -132,12 +129,8 @@ export default {
 
     data () {
         return {
-            content: '<h1>TEST</h1>',
-            buttons: [
-                ['source'],
-                ['bold', 'strikethrough', 'underline', 'italic'],
-                ['font', 'fontsize', 'brush']
-            ],
+            content: '<h1>Hello Jodit Vue</h1>',
+            buttons: ['source', 'image', '|', 'bold', 'underline', 'italic'],
             customButtons: [
                 {
                     name: 'insertDate',
@@ -154,6 +147,10 @@ export default {
 ```
 
 To create custom buttons, check the **[Jodit Editor Docs](https://xdsoft.net/jodit/doc/)**
+
+#### Config property
+
+This config allows you to pass all the other configurations found **[here](https://xdsoft.net/jodit/doc/options/)** to customize your editor.
 
 ## Contributors
 

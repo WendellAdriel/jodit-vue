@@ -11,30 +11,28 @@ export default {
   props: {
     value: { type: String, required: true },
     id: { type: String, default: 'editor' },
-    buttons: { type: String, default: null },
+    buttons: { type: Array, default: null },
     extraButtons: { type: Array, default: null },
-    buttonSize: { type: String, default: 'middle' },
-    showCharsCounter: { type: Boolean, default: true },
-    showWordsCounter: { type: Boolean, default: true },
-    showXpath: { type: Boolean, default: true }
+    config: { type: Object, default: () => ({}) }
   },
 
   computed: {
-    editorConfig () {
-      const config = {
-        toolbarButtonSize: this.buttonSize,
-        showCharsCounter: this.showCharsCounter,
-        showWordsCounter: this.showWordsCounter,
-        showXPathInStatusbar: this.showXpath
+    editorConfig() {
+      const config = { ...this.config }
+
+      if (this.buttons) {
+        config.buttons = this.buttons
+        config.buttonsMD = this.buttons
+        config.buttonsSM = this.buttons
+        config.buttonsXS = this.buttons
       }
 
-      if (this.buttons) config.buttons = this.buttons
       if (this.extraButtons) config.extraButtons = this.extraButtons
       return config
     }
   },
 
-  mounted () {
+  mounted() {
     const editor = new Jodit(`#${this.id}`, this.editorConfig)
     editor.value = this.value
     editor.events.on('change', newValue => this.$emit('input', newValue))
