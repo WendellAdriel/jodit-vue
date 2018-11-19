@@ -169,8 +169,8 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 [version-badge]: https://img.shields.io/npm/v/jodit-vue.svg?style=flat-square
 [package]: https://www.npmjs.com/package/jodit-vue
 [size-badge]: http://img.badgesize.io/https://unpkg.com/jodit-vue/dist/jodit-vue.js?style=flat-square&label=size
-[unpkg-dist]: https://unpkg.com/jodit-vue/dist/
-[gzip-badge]: http://img.badgesize.io/https://unpkg.com/jodit-vue/dist/jodit-vue.js?label=gzip%20size&style=flat-square&compression=gzip
+[unpkg-dist]: https://unpkg.com/jodit-vue/dist/jodit-vue.min.js
+[gzip-badge]: http://img.badgesize.io/https://unpkg.com/jodit-vue/dist/jodit-vue.min.js?label=gzip%20size&style=flat-square&compression=gzip
 [github-watch-badge]: https://img.shields.io/github/watchers/WendellAdriel/jodit-vue.svg?style=social
 [github-watch]: https://github.com/WendellAdriel/jodit-vue/watchers
 [github-star-badge]: https://img.shields.io/github/stars/WendellAdriel/jodit-vue.svg?style=social
