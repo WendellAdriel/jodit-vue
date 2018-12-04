@@ -18,6 +18,8 @@ Vue Wrapper for the **[Jodit Editor](https://github.com/xdan/jodit)**
 Install **jodit** and this wrapper:
 
 ```
+npm install jodit jodit-vue --save
+// or with Yarn
 yarn add jodit jodit-vue
 ```
 
@@ -168,7 +170,7 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 [npmcharts]: http://npmcharts.com/compare/jodit-vue
 [version-badge]: https://img.shields.io/npm/v/jodit-vue.svg?style=flat-square
 [package]: https://www.npmjs.com/package/jodit-vue
-[size-badge]: http://img.badgesize.io/https://unpkg.com/jodit-vue/dist/jodit-vue.js?style=flat-square&label=size
+[size-badge]: http://img.badgesize.io/https://unpkg.com/jodit-vue/dist/jodit-vue.umd.js?style=flat-square&label=size
 [unpkg-dist]: https://unpkg.com/jodit-vue/dist/jodit-vue.min.js
 [gzip-badge]: http://img.badgesize.io/https://unpkg.com/jodit-vue/dist/jodit-vue.min.js?label=gzip%20size&style=flat-square&compression=gzip
 [github-watch-badge]: https://img.shields.io/github/watchers/WendellAdriel/jodit-vue.svg?style=social
