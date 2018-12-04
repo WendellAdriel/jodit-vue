@@ -893,6 +893,11 @@ isobject@^2.0.0:
   dependencies:
     isarray "1.0.0"
 
+jodit@^3.2.21:
+  version "3.2.26"
+  resolved "https://registry.yarnpkg.com/jodit/-/jodit-3.2.26.tgz#1d6f9500be34543f6ced2c48790afd4a08f3ac6d"
+  integrity sha512-7VT0hUmyjQKThmYNR1WaGZqHRUmEJ70CHFUBInlxzfLdvTrTkeVy9hvEVoyktuh5B0KXPwYY7zsbuJiYS30FYw==
+
 js-base64@^2.1.9:
   version "2.4.9"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.4.9.tgz#748911fb04f48a60c4771b375cac45a80df11c03"

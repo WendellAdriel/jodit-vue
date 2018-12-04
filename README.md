@@ -15,12 +15,12 @@ Vue Wrapper for the **[Jodit Editor](https://github.com/xdan/jodit)**
 
 ## How to use
 
-Install **jodit** and this wrapper:
+Install **Jodit Vue**:
 
 ```
-npm install jodit jodit-vue --save
+npm install jodit-vue --save
 // or with Yarn
-yarn add jodit jodit-vue
+yarn add jodit-vue
 ```
 
 ## Import and use it
