@@ -16,6 +16,12 @@ export default {
     config: { type: Object, default: () => ({}) }
   },
 
+  data () {
+    return {
+      editor: null
+    }
+  },
+
   computed: {
     editorConfig() {
       const config = { ...this.config }
@@ -32,10 +38,16 @@ export default {
     }
   },
 
+  watch: {
+    value (newValue) {
+      this.editor.value = newValue
+    }
+  },
+
   mounted() {
-    const editor = new Jodit(`#${this.id}`, this.editorConfig)
-    editor.value = this.value
-    editor.events.on('change', newValue => this.$emit('input', newValue))
+    this.editor = new Jodit(`#${this.id}`, this.editorConfig)
+    this.editor.value = this.value
+    this.editor.events.on('change', newValue => this.$emit('input', newValue))
   }
 }
 </script>

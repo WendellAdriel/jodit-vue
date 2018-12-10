@@ -1,6 +1,6 @@
 {
   "name": "jodit-vue",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Vue wrapper for Jodit Editor",
   "main": "./dist/jodit-vue.umd.js",
   "module": "./dist/jodit-vue.esm.js",
