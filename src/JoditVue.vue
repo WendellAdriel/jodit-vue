@@ -38,12 +38,6 @@ export default {
     }
   },
 
-  watch: {
-    value (newValue) {
-      this.editor.value = newValue
-    }
-  },
-
   mounted() {
     this.editor = new Jodit(`#${this.id}`, this.editorConfig)
     this.editor.value = this.value
