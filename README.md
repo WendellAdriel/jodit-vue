@@ -152,7 +152,7 @@ To create custom buttons, check the **[Jodit Editor Docs](https://xdsoft.net/jod
 
 #### Config property
 
-This config allows you to pass all the other configurations found **[here](https://xdsoft.net/jodit/doc/options/)** to customize your editor.
+This config allows you to pass all the other configurations found **[here](https://xdsoft.net/jodit/doc/options/)** to customize your editor
 
 ## Contributors
 
