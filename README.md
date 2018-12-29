@@ -1,7 +1,7 @@
 # Jodit Vue
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/WendellAdriel/jodit-vue/blob/master/LICENSE)
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 [![version][version-badge]][package]
 [![downloads][downloads-badge]][npmcharts]
@@ -160,8 +160,8 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars1.githubusercontent.com/u/11641518?v=4" width="100px;"/><br /><sub><b>Wendell Adriel</b></sub>](https://wendelladriel.com)<br />[💻](https://github.com/WendellAdriel/jodit-vue/commits?author=WendellAdriel "Code") [📖](https://github.com/WendellAdriel/jodit-vue/commits?author=WendellAdriel "Documentation") [💡](#example-WendellAdriel "Examples") [🤔](#ideas-WendellAdriel "Ideas, Planning, & Feedback") |
-| :---: |
+| [<img src="https://avatars1.githubusercontent.com/u/11641518?v=4" width="100px;"/><br /><sub><b>Wendell Adriel</b></sub>](https://wendelladriel.com)<br />[💻](https://github.com/WendellAdriel/jodit-vue/commits?author=WendellAdriel "Code") [📖](https://github.com/WendellAdriel/jodit-vue/commits?author=WendellAdriel "Documentation") [💡](#example-WendellAdriel "Examples") [🤔](#ideas-WendellAdriel "Ideas, Planning, & Feedback") | [<img src="https://avatars3.githubusercontent.com/u/26570413?v=4" width="100px;"/><br /><sub><b>daarxwalker</b></sub>](https://github.com/daarxwalker)<br />[🐛](https://github.com/WendellAdriel/jodit-vue/issues?q=author%3Adaarxwalker "Bug reports") [🤔](#ideas-daarxwalker "Ideas, Planning, & Feedback") |
+| :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
