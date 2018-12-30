@@ -38,7 +38,15 @@ export default {
     }
   },
 
-  mounted() {
+  watch: {
+    value (newValue) {
+      if (this.editor.value !== newValue) {
+        this.editor.value = newValue
+      }
+    }
+  },
+
+  mounted () {
     this.editor = new Jodit(`#${this.id}`, this.editorConfig)
     this.editor.value = this.value
     this.editor.events.on('change', newValue => this.$emit('input', newValue))
