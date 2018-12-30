@@ -164,7 +164,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 | :---: | :---: | :---: | :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!!!
 
 [downloads-badge]: https://img.shields.io/npm/dm/jodit-vue.svg?style=flat-square
 [npmcharts]: http://npmcharts.com/compare/jodit-vue

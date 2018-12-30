@@ -40,9 +40,7 @@ export default {
 
   watch: {
     value (newValue) {
-      if (this.editor.value !== newValue) {
-        this.editor.value = newValue
-      }
+      if (this.editor.value !== newValue) this.editor.value = newValue
     }
   },
 
