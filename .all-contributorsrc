@@ -30,6 +30,15 @@
         "bug",
         "ideas"
       ]
+    },
+    {
+      "login": "jsadzinski",
+      "name": "Jarosław Sadziński",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/24715701?v=4",
+      "profile": "https://github.com/jsadzinski",
+      "contributions": [
+        "bug"
+      ]
     }
   ]
 }
