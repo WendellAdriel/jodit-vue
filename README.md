@@ -27,7 +27,7 @@ yarn add jodit-vue
 
 Since this component is just a wrapper, you need to include the `css` of the **Jodit Editor** on your app for it to work properly, if you're using `vue-cli` to create your app, or another build system you can import it directly or add a `link` tag with the `css` file provided by the **Jodit Editor** package.
 
-```
+```js
 import 'jodit/build/jodit.min.css'
 import Vue from 'vue'
 import JoditVue from 'jodit-vue'
@@ -37,10 +37,10 @@ Vue.use(JoditVue)
 
 Instead of using `Vue.use(JoditVue)` you can use the component locally
 
-```
+```vue
 <template>
     <div id="app">
-        <jodit-vue v-model="content">
+        <jodit-vue v-model="content" />
     </div>
 </template>
 
@@ -83,10 +83,10 @@ If you pass only the `v-model` for the component, it will load all the editor fe
 
 When providing the buttons to show on the editor you will need to provide an array with the buttons that you want to show. The button names can be found **[here](https://xdsoft.net/jodit/play.html)**. You can also pass a `|` to put a divider between the buttons.
 
-```
+```vue
 <template>
     <div id="app">
-        <jodit-vue v-model="content" :buttons="buttons">
+        <jodit-vue v-model="content" :buttons="buttons" />
     </div>
 </template>
 
@@ -113,10 +113,10 @@ export default {
 
 If you need to create custom buttons to the editor, you can create them and provide the component with an array
 
-```
+```vue
 <template>
     <div id="app">
-        <jodit-vue v-model="content" :buttons="buttons" :extra-buttons="customButtons">
+        <jodit-vue v-model="content" :buttons="buttons" :extra-buttons="customButtons" />
     </div>
 </template>
 
