@@ -59,6 +59,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "dbettini",
+      "name": "Dino Bettini",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/16350909?v=4",
+      "profile": "https://github.com/dbettini",
+      "contributions": [
+        "question",
+        "bug"
+      ]
     }
   ]
 }
