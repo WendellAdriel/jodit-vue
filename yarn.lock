@@ -1176,10 +1176,10 @@ isstream@~0.1.2:
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
-jodit@^3.2.21:
-  version "3.2.26"
-  resolved "https://registry.yarnpkg.com/jodit/-/jodit-3.2.26.tgz#1d6f9500be34543f6ced2c48790afd4a08f3ac6d"
-  integrity sha512-7VT0hUmyjQKThmYNR1WaGZqHRUmEJ70CHFUBInlxzfLdvTrTkeVy9hvEVoyktuh5B0KXPwYY7zsbuJiYS30FYw==
+jodit@^3.2.44:
+  version "3.2.44"
+  resolved "https://registry.yarnpkg.com/jodit/-/jodit-3.2.44.tgz#c717bbb6c51471d40cf61faafaf6834b5b655b8c"
+  integrity sha512-2rwOpQ18zqjjh+YRtuWcexGKYeR4hQo0ekxZsYNb8X0CQr2k6fkvjx48nITu4hzodFptfRXDPaJDIus2QeVE0Q==
 
 js-base64@^2.1.9:
   version "2.4.9"

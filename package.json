@@ -1,6 +1,6 @@
 {
   "name": "jodit-vue",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Vue wrapper for Jodit Editor",
   "main": "./dist/jodit-vue.umd.js",
   "module": "./dist/jodit-vue.esm.js",
@@ -39,7 +39,7 @@
   "author": "Wendell Adriel <wendelladriel.ti@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "jodit": "^3.2.21"
+    "jodit": "^3.2.44"
   },
   "devDependencies": {
     "all-contributors-cli": "^5.5.0",
