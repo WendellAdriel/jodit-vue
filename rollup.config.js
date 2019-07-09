@@ -1,9 +1,12 @@
+import pkg from './package.json'
+import commonjs from 'rollup-plugin-commonjs'
 import vue from 'rollup-plugin-vue'
 import buble from 'rollup-plugin-buble'
-import uglify from 'rollup-plugin-uglify-es'
+import { terser } from 'rollup-plugin-terser'
 
-export default {
-  external: ['jodit'],
+/** @type {import('rollup').RollupOptions} */
+const baseConfig = {
+  external: Object.keys(pkg.dependencies),
   input: 'src/wrapper.js',
   output: {
     name: 'JoditVue',
@@ -14,6 +17,7 @@ export default {
     }
   },
   plugins: [
+    commonjs(),
     vue({
       css: true,
       compileTemplate: true
@@ -21,6 +25,32 @@ export default {
     buble({
       objectAssign: 'Object.assign'
     }),
-    uglify()
+    terser()
   ]
 }
+
+/** @type {Array<import('rollup').RollupOptions>} */
+const config = [{
+  ...baseConfig,
+  output: {
+    ...baseConfig.output,
+    format: 'esm',
+    file: pkg.module
+  }
+}, {
+  ...baseConfig,
+  output: {
+    ...baseConfig.output,
+    format: 'umd',
+    file: pkg.main
+  }
+}, {
+  ...baseConfig,
+  output: {
+    ...baseConfig.output,
+    format: 'iife',
+    file: pkg.unpkg
+  }
+}]
+
+export default config

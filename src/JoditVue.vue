@@ -16,11 +16,7 @@ export default {
     config: { type: Object, default: () => ({}) }
   },
 
-  data () {
-    return {
-      editor: null
-    }
-  },
+  data: () => ({ editor: null }),
 
   computed: {
     editorConfig () {
