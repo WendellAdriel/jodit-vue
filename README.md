@@ -74,7 +74,6 @@ If you pass only the `v-model` for the component, it will load all the editor fe
 
 | Property         | Type    | Default Value | Description                                                                                                           |
 | :--------------: | :-----: | :-----------: | :-------------------------------------------------------------------------------------------------------------------: |
-| id               | String  | 'editor'      | The ID of the editor `div` wrapper, you need to specify it if you want to mount more than one editor on the same page |
 | buttons          | Array   | `null`        | The buttons that you want to show on toolbar, if this is not provided, all the buttons will be shown                  |
 | extraButtons     | Array   | `null`        | If you need to create and display custom buttons you can pass an array with your custom buttons to this property      |
 | config           | Object  | `{}`          | The config object that has all the other configurations for the editor                                                |
