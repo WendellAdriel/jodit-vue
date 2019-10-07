@@ -13,7 +13,7 @@ const baseConfig = {
     exports: 'named',
     sourceMap: 'inline',
     globals: {
-      'jodit': 'Jodit'
+      jodit: 'Jodit'
     }
   },
   plugins: [
