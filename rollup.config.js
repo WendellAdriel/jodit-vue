@@ -1,8 +1,15 @@
+import path from 'path'
 import pkg from './package.json'
 import commonjs from 'rollup-plugin-commonjs'
 import vue from 'rollup-plugin-vue'
 import buble from 'rollup-plugin-buble'
 import { terser } from 'rollup-plugin-terser'
+
+const formats = {
+  cjs: pkg.main,
+  esm: pkg.module,
+  umd: pkg.unpkg
+}
 
 /** @type {import('rollup').RollupOptions} */
 const baseConfig = {
@@ -24,33 +31,40 @@ const baseConfig = {
     }),
     buble({
       objectAssign: 'Object.assign'
-    }),
-    terser()
+    })
   ]
 }
 
-/** @type {Array<import('rollup').RollupOptions>} */
-const config = [{
-  ...baseConfig,
-  output: {
-    ...baseConfig.output,
-    format: 'esm',
-    file: pkg.module
+const config = Object.entries(formats).reduce((acc, [format, filename]) => {
+  /** @type {import('rollup').RollupOptions} */
+  const config = {
+    ...baseConfig,
+    output: {
+      ...baseConfig.output,
+      format,
+      file: getFilename(filename)
+    }
   }
-}, {
-  ...baseConfig,
-  output: {
-    ...baseConfig.output,
-    format: 'umd',
-    file: pkg.main
+  /** @type {import('rollup').RollupOptions} */
+  const minifiedConfig = {
+    ...baseConfig,
+    output: {
+      ...baseConfig.output,
+      format,
+      file: getFilename(filename, /* minify */ true)
+    },
+    plugins: baseConfig.plugins.concat(terser())
   }
-}, {
-  ...baseConfig,
-  output: {
-    ...baseConfig.output,
-    format: 'iife',
-    file: pkg.unpkg
-  }
-}]
+  acc.push(config, minifiedConfig)
+  return acc
+}, [])
 
 export default config
+
+function getFilename (filename, minify = false) {
+  const dirname = path.dirname(filename)
+  const extname = path.extname(filename)
+  const basename = path.basename(filename, extname)
+  filename = [basename, minify && '.min', extname].filter(Boolean).join('')
+  return path.join(dirname, filename)
+}
