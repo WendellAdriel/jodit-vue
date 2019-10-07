@@ -69,6 +69,17 @@
         "question",
         "bug"
       ]
+    },
+    {
+      "login": "vladimyr",
+      "name": "Dario Vladović",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1170440?v=4",
+      "profile": "https://github.com/vladimyr",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
-  ]
+  ],
+  "commitConvention": "none"
 }
