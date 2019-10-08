@@ -1,7 +1,7 @@
 # Jodit Vue
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/WendellAdriel/jodit-vue/blob/master/LICENSE)
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
 
 [![version][version-badge]][package]
 [![downloads][downloads-badge]][npmcharts]
@@ -74,7 +74,6 @@ If you pass only the `v-model` for the component, it will load all the editor fe
 
 | Property         | Type    | Default Value | Description                                                                                                           |
 | :--------------: | :-----: | :-----------: | :-------------------------------------------------------------------------------------------------------------------: |
-| id               | String  | 'editor'      | The ID of the editor `div` wrapper, you need to specify it if you want to mount more than one editor on the same page |
 | buttons          | Array   | `null`        | The buttons that you want to show on toolbar, if this is not provided, all the buttons will be shown                  |
 | extraButtons     | Array   | `null`        | If you need to create and display custom buttons you can pass an array with your custom buttons to this property      |
 | config           | Object  | `{}`          | The config object that has all the other configurations for the editor                                                |
@@ -159,9 +158,22 @@ This config allows you to pass all the other configurations found **[here](https
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
-| [<img src="https://avatars1.githubusercontent.com/u/11641518?v=4" width="100px;"/><br /><sub><b>Wendell Adriel</b></sub>](https://wendelladriel.com)<br />[💻](https://github.com/WendellAdriel/jodit-vue/commits?author=WendellAdriel "Code") [📖](https://github.com/WendellAdriel/jodit-vue/commits?author=WendellAdriel "Documentation") [💡](#example-WendellAdriel "Examples") [🤔](#ideas-WendellAdriel "Ideas, Planning, & Feedback") | [<img src="https://avatars3.githubusercontent.com/u/26570413?v=4" width="100px;"/><br /><sub><b>daarxwalker</b></sub>](https://github.com/daarxwalker)<br />[🐛](https://github.com/WendellAdriel/jodit-vue/issues?q=author%3Adaarxwalker "Bug reports") [🤔](#ideas-daarxwalker "Ideas, Planning, & Feedback") | [<img src="https://avatars1.githubusercontent.com/u/24715701?v=4" width="100px;"/><br /><sub><b>Jarosław Sadziński</b></sub>](https://github.com/jsadzinski)<br />[🐛](https://github.com/WendellAdriel/jodit-vue/issues?q=author%3Ajsadzinski "Bug reports") | [<img src="https://avatars2.githubusercontent.com/u/24190040?v=4" width="100px;"/><br /><sub><b>edgar-koster</b></sub>](https://github.com/edgar-koster)<br />[🐛](https://github.com/WendellAdriel/jodit-vue/issues?q=author%3Aedgar-koster "Bug reports") | [<img src="https://avatars1.githubusercontent.com/u/21992961?v=4" width="100px;"/><br /><sub><b>abdelaziz321</b></sub>](https://github.com/abdelaziz321)<br />[🐛](https://github.com/WendellAdriel/jodit-vue/issues?q=author%3Aabdelaziz321 "Bug reports") [💻](https://github.com/WendellAdriel/jodit-vue/commits?author=abdelaziz321 "Code") [📖](https://github.com/WendellAdriel/jodit-vue/commits?author=abdelaziz321 "Documentation") | [<img src="https://avatars2.githubusercontent.com/u/16350909?v=4" width="100px;"/><br /><sub><b>Dino Bettini</b></sub>](https://github.com/dbettini)<br />[💬](#question-dbettini "Answering Questions") [🐛](https://github.com/WendellAdriel/jodit-vue/issues?q=author%3Adbettini "Bug reports") |
-| :---: | :---: | :---: | :---: | :---: | :---: |
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://wendelladriel.com"><img src="https://avatars1.githubusercontent.com/u/11641518?v=4" width="100px;" alt="Wendell Adriel"/><br /><sub><b>Wendell Adriel</b></sub></a><br /><a href="https://github.com/WendellAdriel/jodit-vue/commits?author=WendellAdriel" title="Code">💻</a> <a href="https://github.com/WendellAdriel/jodit-vue/commits?author=WendellAdriel" title="Documentation">📖</a> <a href="#example-WendellAdriel" title="Examples">💡</a> <a href="#ideas-WendellAdriel" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/daarxwalker"><img src="https://avatars3.githubusercontent.com/u/26570413?v=4" width="100px;" alt="daarxwalker"/><br /><sub><b>daarxwalker</b></sub></a><br /><a href="https://github.com/WendellAdriel/jodit-vue/issues?q=author%3Adaarxwalker" title="Bug reports">🐛</a> <a href="#ideas-daarxwalker" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/jsadzinski"><img src="https://avatars1.githubusercontent.com/u/24715701?v=4" width="100px;" alt="Jarosław Sadziński"/><br /><sub><b>Jarosław Sadziński</b></sub></a><br /><a href="https://github.com/WendellAdriel/jodit-vue/issues?q=author%3Ajsadzinski" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/edgar-koster"><img src="https://avatars2.githubusercontent.com/u/24190040?v=4" width="100px;" alt="edgar-koster"/><br /><sub><b>edgar-koster</b></sub></a><br /><a href="https://github.com/WendellAdriel/jodit-vue/issues?q=author%3Aedgar-koster" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/abdelaziz321"><img src="https://avatars1.githubusercontent.com/u/21992961?v=4" width="100px;" alt="abdelaziz321"/><br /><sub><b>abdelaziz321</b></sub></a><br /><a href="https://github.com/WendellAdriel/jodit-vue/issues?q=author%3Aabdelaziz321" title="Bug reports">🐛</a> <a href="https://github.com/WendellAdriel/jodit-vue/commits?author=abdelaziz321" title="Code">💻</a> <a href="https://github.com/WendellAdriel/jodit-vue/commits?author=abdelaziz321" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/dbettini"><img src="https://avatars2.githubusercontent.com/u/16350909?v=4" width="100px;" alt="Dino Bettini"/><br /><sub><b>Dino Bettini</b></sub></a><br /><a href="#question-dbettini" title="Answering Questions">💬</a> <a href="https://github.com/WendellAdriel/jodit-vue/issues?q=author%3Adbettini" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/vladimyr"><img src="https://avatars1.githubusercontent.com/u/1170440?v=4" width="100px;" alt="Dario Vladović"/><br /><sub><b>Dario Vladović</b></sub></a><br /><a href="https://github.com/WendellAdriel/jodit-vue/commits?author=vladimyr" title="Code">💻</a> <a href="https://github.com/WendellAdriel/jodit-vue/commits?author=vladimyr" title="Documentation">📖</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!!!

@@ -1,5 +1,5 @@
 <template>
-  <div :id="id" />
+  <div />
 </template>
 
 <script>
@@ -10,17 +10,12 @@ export default {
 
   props: {
     value: { type: String, required: true },
-    id: { type: String, default: 'editor' },
     buttons: { type: Array, default: null },
     extraButtons: { type: Array, default: null },
     config: { type: Object, default: () => ({}) }
   },
 
-  data () {
-    return {
-      editor: null
-    }
-  },
+  data: () => ({ editor: null }),
 
   computed: {
     editorConfig () {
@@ -45,7 +40,7 @@ export default {
   },
 
   mounted () {
-    this.editor = new Jodit(`#${this.id}`, this.editorConfig)
+    this.editor = new Jodit(this.$el, this.editorConfig)
     this.editor.value = this.value
     this.editor.events.on('change', newValue => this.$emit('input', newValue))
   },
