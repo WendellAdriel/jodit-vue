@@ -4,8 +4,9 @@ module.exports = {
     'plugin:vue/recommended'
   ],
   rules: {
-    'vue/max-attributes-per-line': 'off',
-    'vue/require-default-prop': 'off'
+    'vue/html-self-closing': ['warn', {
+      html: { normal: 'never' }
+    }]
   },
   env: {
     browser: true
