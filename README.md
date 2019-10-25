@@ -46,7 +46,7 @@ Instead of using `Vue.use(JoditVue)` you can use the component locally
 
 <script>
 import 'jodit/build/jodit.min.css'
-import JoditVue from 'jodit-vue'
+import { JoditVue } from 'jodit-vue'
 
 export default {
     name: 'app',
@@ -91,7 +91,7 @@ When providing the buttons to show on the editor you will need to provide an arr
 
 <script>
 import 'jodit/build/jodit.min.css'
-import JoditVue from 'jodit-vue'
+import { JoditVue } from 'jodit-vue'
 
 export default {
     name: 'app',
@@ -121,7 +121,7 @@ If you need to create custom buttons to the editor, you can create them and prov
 
 <script>
 import 'jodit/build/jodit.min.css'
-import JoditVue from 'jodit-vue'
+import { JoditVue } from 'jodit-vue'
 
 export default {
     name: 'app',
