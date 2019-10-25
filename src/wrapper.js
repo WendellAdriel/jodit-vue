@@ -16,5 +16,6 @@ else if (typeof global !== 'undefined') GlobalVue = global.Vue
 
 if (GlobalVue) GlobalVue.use(plugin)
 
-export default JoditVue
+export default plugin
+export { JoditVue }
 export { default as Jodit } from 'jodit'
