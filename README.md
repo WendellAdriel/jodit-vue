@@ -40,18 +40,18 @@ Instead of using `Vue.use(JoditVue)` you can use the component locally
 ```vue
 <template>
     <div id="app">
-        <jodit-vue v-model="content" />
+        <jodit-editor v-model="content" />
     </div>
 </template>
 
 <script>
 import 'jodit/build/jodit.min.css'
-import { JoditVue } from 'jodit-vue'
+import { JoditEditor } from 'jodit-vue'
 
 export default {
     name: 'app',
 
-    components: { JoditVue },
+    components: { JoditEditor },
 
     data () {
         return {
@@ -85,18 +85,18 @@ When providing the buttons to show on the editor you will need to provide an arr
 ```vue
 <template>
     <div id="app">
-        <jodit-vue v-model="content" :buttons="buttons" />
+        <jodit-editor v-model="content" :buttons="buttons" />
     </div>
 </template>
 
 <script>
 import 'jodit/build/jodit.min.css'
-import { JoditVue } from 'jodit-vue'
+import { JoditEditor } from 'jodit-vue'
 
 export default {
     name: 'app',
 
-    components: { JoditVue },
+    components: { JoditEditor },
 
     data () {
         return {
@@ -115,18 +115,18 @@ If you need to create custom buttons to the editor, you can create them and prov
 ```vue
 <template>
     <div id="app">
-        <jodit-vue v-model="content" :buttons="buttons" :extra-buttons="customButtons" />
+        <jodit-editor v-model="content" :buttons="buttons" :extra-buttons="customButtons" />
     </div>
 </template>
 
 <script>
 import 'jodit/build/jodit.min.css'
-import { JoditVue } from 'jodit-vue'
+import { JoditEditor } from 'jodit-vue'
 
 export default {
     name: 'app',
 
-    components: { JoditVue },
+    components: { JoditEditor },
 
     data () {
         return {
