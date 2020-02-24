@@ -1,11 +1,13 @@
 /* eslint-env node */
 
-import JoditVue from './JoditVue.vue'
+import JoditEditor from './JoditEditor.vue'
 
 export function install (Vue) {
   if (install.installed) return
   install.installed = true
-  Vue.component('JoditVue', JoditVue)
+  Vue.component('JoditEditor', JoditEditor)
+  // Backwards compatible global component registration
+  Vue.component('JoditVue', JoditEditor)
 }
 
 const plugin = { install }
@@ -17,5 +19,5 @@ else if (typeof global !== 'undefined') GlobalVue = global.Vue
 if (GlobalVue) GlobalVue.use(plugin)
 
 export default plugin
-export { JoditVue }
+export { JoditEditor, JoditEditor as JoditVue }
 export { default as Jodit } from 'jodit'
