@@ -6,7 +6,7 @@
 import Jodit from 'jodit'
 
 export default {
-  name: 'JoditVue',
+  name: 'JoditEditor',
 
   props: {
     value: { type: String, required: true },
