@@ -39,9 +39,13 @@
   "author": "Wendell Adriel <wendelladriel.ti@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@ungap/global-this": "^0.3.1",
     "jodit": "^3.2.46"
   },
   "devDependencies": {
+    "@rollup/plugin-buble": "^0.21.1",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
     "all-contributors-cli": "^6.7.0",
     "del-cli": "^3.0.0",
     "eslint": "^6.0.1",
@@ -52,8 +56,6 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^5.2.3",
     "rollup": "^1.16.7",
-    "rollup-plugin-buble": "^0.19.8",
-    "rollup-plugin-commonjs": "^10.0.1",
     "rollup-plugin-terser": "^5.1.1",
     "rollup-plugin-vue": "^5.0.1",
     "vue": "^2.6.10",
