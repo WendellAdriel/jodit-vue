@@ -1,5 +1,6 @@
 /* eslint-env node */
 
+import globalThis from '@ungap/global-this'
 import JoditEditor from './JoditEditor.vue'
 
 export function install (Vue) {
@@ -11,12 +12,8 @@ export function install (Vue) {
 }
 
 const plugin = { install }
-let GlobalVue = null
 
-if (typeof window !== 'undefined') GlobalVue = window.Vue
-else if (typeof global !== 'undefined') GlobalVue = global.Vue
-
-if (GlobalVue) GlobalVue.use(plugin)
+if (globalThis.Vue) globalThis.Vue.use(plugin)
 
 export default plugin
 export { JoditEditor, JoditEditor as JoditVue }

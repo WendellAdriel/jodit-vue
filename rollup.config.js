@@ -1,8 +1,9 @@
 import path from 'path'
 import pkg from './package.json'
-import commonjs from 'rollup-plugin-commonjs'
+import commonjs from '@rollup/plugin-commonjs'
+import resolve from '@rollup/plugin-node-resolve'
 import vue from 'rollup-plugin-vue'
-import buble from 'rollup-plugin-buble'
+import buble from '@rollup/plugin-buble'
 import { terser } from 'rollup-plugin-terser'
 
 const formats = {
@@ -13,7 +14,7 @@ const formats = {
 
 /** @type {import('rollup').RollupOptions} */
 const baseConfig = {
-  external: Object.keys(pkg.dependencies),
+  external: ['jodit'],
   input: 'src/wrapper.js',
   output: {
     name: 'JoditVue',
@@ -25,6 +26,7 @@ const baseConfig = {
   },
   plugins: [
     commonjs(),
+    resolve(),
     vue({
       css: true,
       compileTemplate: true
