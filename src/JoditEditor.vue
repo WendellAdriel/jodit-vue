@@ -1,9 +1,9 @@
 <template>
-  <div></div>
+  <textarea></textarea>
 </template>
 
 <script>
-import Jodit from 'jodit'
+import { Jodit } from 'jodit'
 
 export default {
   name: 'JoditEditor',
