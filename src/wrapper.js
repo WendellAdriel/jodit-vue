@@ -17,4 +17,4 @@ if (globalThis.Vue) globalThis.Vue.use(plugin)
 
 export default plugin
 export { JoditEditor, JoditEditor as JoditVue }
-export { default as Jodit } from 'jodit'
+export { Jodit } from 'jodit'
