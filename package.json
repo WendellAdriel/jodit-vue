@@ -40,7 +40,7 @@
   "license": "MIT",
   "dependencies": {
     "@ungap/global-this": "^0.3.1",
-    "jodit": "^3.4.1"
+    "jodit": "~3.4.1"
   },
   "devDependencies": {
     "@rollup/plugin-buble": "^0.21.1",
