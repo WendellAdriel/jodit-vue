@@ -26,7 +26,7 @@ export default {
       plugins: [
         {
           name: 'example',
-          cb: function (editor) {
+          callback: function (editor) {
             editor.events.on('afterInit', function () {
               console.warn('Example plugin has beed initialized, check Jodit documentation for more details.')
             })

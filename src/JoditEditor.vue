@@ -43,7 +43,7 @@ export default {
   mounted () {
     if (this.plugins.length) {
       this.plugins.forEach(plugin => {
-        Jodit.plugins.add(plugin.name, plugin.cb)
+        Jodit.plugins.add(plugin.name, plugin.callback)
       })
     }
     this.editor = new Jodit(this.$el, this.editorConfig)
