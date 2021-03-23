@@ -77,6 +77,7 @@ If you pass only the `v-model` for the component, it will load all the editor fe
 | buttons          | Array   | `null`        | The buttons that you want to show on toolbar, if this is not provided, all the buttons will be shown                  |
 | extraButtons     | Array   | `null`        | If you need to create and display custom buttons you can pass an array with your custom buttons to this property      |
 | config           | Object  | `{}`          | The config object that has all the other configurations for the editor                                                |
+| plugins          | Array   | `[]`          | If you need to create custom plugins you can pass array of plugins to this property                                   |
 
 #### Buttons property
 
@@ -152,6 +153,46 @@ To create custom buttons, check the **[Jodit Editor Docs](https://xdsoft.net/jod
 #### Config property
 
 This config allows you to pass all the other configurations found **[here](https://xdsoft.net/jodit/doc/options/)** to customize your editor
+
+#### Plugins property
+Plugins property allows you to pass array of plugin objects with name and callback which will be initialized when Jodit is initialized.
+For example:
+```vue
+<template>
+    <div id="app">
+        <jodit-editor v-model="content" :plugins="plugins" />
+    </div>
+</template>
+
+<script>
+import 'jodit/build/jodit.min.css'
+import { JoditEditor } from 'jodit-vue'
+
+export default {
+    name: 'app',
+
+    components: { JoditEditor },
+
+    data () {
+        return {
+            content: '<h1>Hello Jodit Vue</h1>',
+            plugins: [
+              {
+                name: 'example',
+                callback: function (editor) {
+                  editor.events.on('afterInit', function () {
+                    console.warn('Example plugin has beed initialized, check Jodit documentation for more details.')
+                  })
+                }
+              }
+            ]
+        }
+    }
+}
+</script>
+```
+To add plugins Jodit Vue uses `Jodit.plugins.add` API.
+Check Jodit [documentation](https://github.com/xdan/jodit#create-plugin) and [examples](https://xdsoft.net/jodit/examples/plugin/custom_plugin.html) how to implement plugins.
 
 ## Contributors
 
