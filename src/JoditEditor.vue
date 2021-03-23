@@ -12,7 +12,8 @@ export default {
     value: { type: String, required: true },
     buttons: { type: Array, default: null },
     extraButtons: { type: Array, default: null },
-    config: { type: Object, default: () => ({}) }
+    config: { type: Object, default: () => ({}) },
+    plugins: { type: Array, default: () => [] }
   },
 
   data: () => ({ editor: null }),
@@ -40,6 +41,11 @@ export default {
   },
 
   mounted () {
+    if (this.plugins.length) {
+      this.plugins.forEach(plugin => {
+        Jodit.plugins.add(plugin.name, plugin.cb)
+      })
+    }
     this.editor = new Jodit(this.$el, this.editorConfig)
     this.editor.value = this.value
     this.editor.events.on('change', newValue => this.$emit('input', newValue))
