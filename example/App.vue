@@ -28,7 +28,7 @@ export default {
           name: 'example',
           cb: function (editor) {
             editor.events.on('afterInit', function () {
-              console.warn('Example plugin has beed initiliazed, check jodit documentation for mode details.')
+              console.warn('Example plugin has beed initiliazed, check Jodit documentation for more details.')
             })
           }
         }
