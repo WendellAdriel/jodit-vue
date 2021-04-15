@@ -41,6 +41,7 @@ describe('JoditEditor', () => {
       name: 'example',
       callback: () => { }
     }
+    // eslint-disable-next-line no-unused-vars
     const wrapper = mount(JoditEditor, {
       propsData: {
         value: 'Hello Jodit',
