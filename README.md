@@ -155,7 +155,7 @@ To create custom buttons, check the **[Jodit Editor Docs](https://xdsoft.net/jod
 This config allows you to pass all the other configurations found **[here](https://xdsoft.net/jodit/doc/options/)** to customize your editor
 
 #### Plugins property
-Plugins property allows you to pass array of plugin objects with name and callback which will be initialized when Jodit is initialized.
+Plugins property allows you to pass array of plugin objects with name and callback which will be initialized when Jodit is initialized. Plugins are initialized globally and it will added to all instances of Jodit editor.
 For example:
 ```vue
 <template>

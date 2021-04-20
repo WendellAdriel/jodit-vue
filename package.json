@@ -30,7 +30,8 @@
     "clean": "del-cli ./dist",
     "prebuild": "yarn lint && yarn clean",
     "build": "rollup --config ./rollup.config.js",
-    "prepublishOnly": "yarn lint && yarn build"
+    "prepublishOnly": "yarn lint && yarn build",
+    "test": "jest"
   },
   "repository": "git@github.com:WendellAdriel/jodit-vue.git",
   "bugs": {
@@ -40,16 +41,19 @@
   "author": "Wendell Adriel <wendelladriel.ti@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@ungap/global-this": "^0.3.1",
-    "jodit": "~3.4.1"
+    "@ungap/global-this": "^0.4.4",
+    "jodit": "^3.6.8"
   },
   "devDependencies": {
     "@rollup/plugin-buble": "^0.21.1",
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
     "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "@vue/test-utils": "^1.1.1",
     "all-contributors-cli": "^6.7.0",
+    "babel-jest": "^26.6.3",
     "del-cli": "^3.0.0",
     "eslint": "^6.0.1",
     "eslint-config-standard": "^14.1.0",
@@ -58,6 +62,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^5.2.3",
+    "jest": "^26.6.3",
+    "jest-transform-stub": "^2.0.0",
     "rollup": "^1.16.7",
     "rollup-plugin-terser": "^5.1.1",
     "rollup-plugin-vue": "^5.0.1",
