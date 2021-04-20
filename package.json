@@ -1,6 +1,6 @@
 {
   "name": "jodit-vue",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "Vue wrapper for Jodit Editor",
   "main": "./dist/jodit-vue.js",
   "module": "./dist/jodit-vue.esm.js",
@@ -23,8 +23,6 @@
   ],
   "scripts": {
     "serve": "vue-cli-service serve ./example/main.js",
-    "contributors:generate": "all-contributors generate",
-    "contributors:add": "all-contributors add",
     "lint": "eslint --color --ext .js,.vue .",
     "lint:fix": "eslint --color --fix --ext .js,.vue .",
     "clean": "del-cli ./dist",
@@ -52,7 +50,6 @@
     "@vue/cli-plugin-unit-jest": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/test-utils": "^1.1.1",
-    "all-contributors-cli": "^6.7.0",
     "babel-jest": "^26.6.3",
     "del-cli": "^3.0.0",
     "eslint": "^6.0.1",

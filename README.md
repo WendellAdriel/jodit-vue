@@ -194,30 +194,10 @@ export default {
 To add plugins Jodit Vue uses `Jodit.plugins.add` API.
 Check Jodit [documentation](https://github.com/xdan/jodit#create-plugin) and [examples](https://xdsoft.net/jodit/examples/plugin/custom_plugin.html) how to implement plugins.
 
-## Contributors
+## Credits ✨
 
-Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://wendelladriel.com"><img src="https://avatars1.githubusercontent.com/u/11641518?v=4" width="100px;" alt="Wendell Adriel"/><br /><sub><b>Wendell Adriel</b></sub></a><br /><a href="https://github.com/WendellAdriel/jodit-vue/commits?author=WendellAdriel" title="Code">💻</a> <a href="https://github.com/WendellAdriel/jodit-vue/commits?author=WendellAdriel" title="Documentation">📖</a> <a href="#example-WendellAdriel" title="Examples">💡</a> <a href="#ideas-WendellAdriel" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://github.com/daarxwalker"><img src="https://avatars3.githubusercontent.com/u/26570413?v=4" width="100px;" alt="daarxwalker"/><br /><sub><b>daarxwalker</b></sub></a><br /><a href="https://github.com/WendellAdriel/jodit-vue/issues?q=author%3Adaarxwalker" title="Bug reports">🐛</a> <a href="#ideas-daarxwalker" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://github.com/jsadzinski"><img src="https://avatars1.githubusercontent.com/u/24715701?v=4" width="100px;" alt="Jarosław Sadziński"/><br /><sub><b>Jarosław Sadziński</b></sub></a><br /><a href="https://github.com/WendellAdriel/jodit-vue/issues?q=author%3Ajsadzinski" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="https://github.com/edgar-koster"><img src="https://avatars2.githubusercontent.com/u/24190040?v=4" width="100px;" alt="edgar-koster"/><br /><sub><b>edgar-koster</b></sub></a><br /><a href="https://github.com/WendellAdriel/jodit-vue/issues?q=author%3Aedgar-koster" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="https://github.com/abdelaziz321"><img src="https://avatars1.githubusercontent.com/u/21992961?v=4" width="100px;" alt="abdelaziz321"/><br /><sub><b>abdelaziz321</b></sub></a><br /><a href="https://github.com/WendellAdriel/jodit-vue/issues?q=author%3Aabdelaziz321" title="Bug reports">🐛</a> <a href="https://github.com/WendellAdriel/jodit-vue/commits?author=abdelaziz321" title="Code">💻</a> <a href="https://github.com/WendellAdriel/jodit-vue/commits?author=abdelaziz321" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/dbettini"><img src="https://avatars2.githubusercontent.com/u/16350909?v=4" width="100px;" alt="Dino Bettini"/><br /><sub><b>Dino Bettini</b></sub></a><br /><a href="#question-dbettini" title="Answering Questions">💬</a> <a href="https://github.com/WendellAdriel/jodit-vue/issues?q=author%3Adbettini" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="https://github.com/vladimyr"><img src="https://avatars1.githubusercontent.com/u/1170440?v=4" width="100px;" alt="Dario Vladović"/><br /><sub><b>Dario Vladović</b></sub></a><br /><a href="https://github.com/WendellAdriel/jodit-vue/commits?author=vladimyr" title="Code">💻</a> <a href="https://github.com/WendellAdriel/jodit-vue/commits?author=vladimyr" title="Documentation">📖</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!!!
+- [Wendell Adriel](https://github.com/WendellAdriel)
+- [All Contributors](https://github.com/WendellAdriel/jodit-vue/contributors)
 
 [downloads-badge]: https://img.shields.io/npm/dm/jodit-vue.svg?style=flat-square
 [npmcharts]: http://npmcharts.com/compare/jodit-vue
