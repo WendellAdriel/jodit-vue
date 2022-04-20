@@ -1,6 +1,6 @@
 {
   "name": "jodit-vue",
-  "version": "2.5.0",
+  "version": "2.6.0",
   "description": "Vue wrapper for Jodit Editor",
   "main": "./dist/jodit-vue.js",
   "module": "./dist/jodit-vue.esm.js",
@@ -40,7 +40,7 @@
   "license": "MIT",
   "dependencies": {
     "@ungap/global-this": "^0.4.4",
-    "jodit": "^3.6.8"
+    "jodit": "^3.17.1"
   },
   "devDependencies": {
     "@rollup/plugin-buble": "^0.21.1",

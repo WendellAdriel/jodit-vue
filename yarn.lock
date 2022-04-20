@@ -7501,7 +7501,7 @@ jest@^26.6.3:
     import-local "^3.0.2"
     jest-cli "^26.6.3"
 
-jodit@^3.6.8:
+jodit@^3.17.1:
   version "3.17.1"
   resolved "https://registry.yarnpkg.com/jodit/-/jodit-3.17.1.tgz#85198d31c13b3d755532d14ab5dd7f4e0ac756d0"
   integrity sha512-+id9KQgtGfe1pUpOq0FDUqhdkO+41NC2irbW9O5cLGCPKVsygwaa9+XHZO8AKbF4SQkhprN1V/iQ2V6Lyc7rjQ==
