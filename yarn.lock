@@ -3893,6 +3893,11 @@ core-js@^2.4.0:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
   integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
 
+core-js@^3.21.1:
+  version "3.22.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.22.1.tgz#1936e4f1da82675fe22ae10ee60ef638cd9752fd"
+  integrity sha512-l6CwCLq7XgITOQGhv1dIUmwCFoqFjyQ6zQHUCQlS0xKmb9d6OHIg8jDiEoswhaettT21BSF5qKr6kbvE+aKwxw==
+
 core-js@^3.6.5:
   version "3.9.1"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.9.1.tgz#cec8de593db8eb2a85ffb0dbdeb312cb6e5460ae"
@@ -7497,11 +7502,12 @@ jest@^26.6.3:
     jest-cli "^26.6.3"
 
 jodit@^3.6.8:
-  version "3.6.8"
-  resolved "https://registry.yarnpkg.com/jodit/-/jodit-3.6.8.tgz#79a6267142013e17aa9e7a426bcd8069bfc09cad"
-  integrity sha512-bm+RGnC60z2wjp4WNzRkfkgNsWnWf+IB5yMctU945WyelyT8jM2ZgN1Zy6FEjw1TCeyEsVg/NpT9zCRTXYwdHw==
+  version "3.17.1"
+  resolved "https://registry.yarnpkg.com/jodit/-/jodit-3.17.1.tgz#85198d31c13b3d755532d14ab5dd7f4e0ac756d0"
+  integrity sha512-+id9KQgtGfe1pUpOq0FDUqhdkO+41NC2irbW9O5cLGCPKVsygwaa9+XHZO8AKbF4SQkhprN1V/iQ2V6Lyc7rjQ==
   dependencies:
     autobind-decorator "^2.4.0"
+    core-js "^3.21.1"
 
 js-base64@^2.1.9:
   version "2.6.4"
