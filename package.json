@@ -2,13 +2,10 @@
   "name": "jodit-vue",
   "version": "3.0.0",
   "description": "Vue wrapper for Jodit Editor",
-  "main": "./dist/jodit-vue.js",
-  "module": "./dist/jodit-vue.esm.js",
+  "main": "./dist/jodit-vue.umd.js",
+  "module": "./dist/jodit-vue.es.js",
   "unpkg": "./dist/jodit-vue.umd.js",
   "jsdelivr": "./dist/jodit-vue.umd.js",
-  "browser": {
-    "./sfc": "./src/jodit-vue.vue"
-  },
   "files": [
     "dist",
     "src"
