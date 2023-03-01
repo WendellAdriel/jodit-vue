@@ -71,5 +71,12 @@ const config = Object.entries(formats).reduce((acc, [format, filename]) => {
 }, [])
 
 export default defineConfig({
+  build: {
+    lib: {
+      entry: path.resolve(__dirname, '/src/wrapper.js'),
+      name: 'JoditVue',
+      fileName: (format) => `my-lib.${format}.js`
+    }
+  },
   rollupOptions: config
 })
