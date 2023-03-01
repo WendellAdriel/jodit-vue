@@ -9,12 +9,14 @@ export default {
   name: 'JoditEditor',
 
   props: {
-    value: { type: String, required: true },
+    modelValue: { type: String, required: true },
     buttons: { type: Array, default: null },
     extraButtons: { type: Array, default: null },
     config: { type: Object, default: () => ({}) },
     plugins: { type: Array, default: () => [] }
   },
+
+  emits: ['update:modelValue'],
 
   data: () => ({ editor: null }),
 
@@ -51,7 +53,7 @@ export default {
     this.editor.events.on('change', newValue => this.$emit('input', newValue))
   },
 
-  beforeDestroy () {
+  beforeUnmount () {
     this.editor.destruct()
   }
 }
