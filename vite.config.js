@@ -72,6 +72,14 @@ const config = Object.entries(formats).reduce((acc, [format, filename]) => {
 }, [])
 
 export default defineConfig({
+  resolve: {
+    alias: [
+      {
+        find: /^~(.*)$/,
+        replacement: 'node_modules/$1'
+      }
+    ]
+  },
   build: {
     lib: {
       entry: path.resolve(__dirname, '/src/wrapper.js'),

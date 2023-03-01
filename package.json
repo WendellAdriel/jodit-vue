@@ -22,7 +22,7 @@
     "wysiwyg"
   ],
   "scripts": {
-    "serve": "vue-cli-service serve ./example/main.js",
+    "serve": "vite",
     "lint": "eslint --color --ext .js,.vue .",
     "lint:fix": "eslint --color --fix --ext .js,.vue .",
     "clean": "del-cli ./dist",
