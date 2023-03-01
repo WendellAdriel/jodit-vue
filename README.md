@@ -8,8 +8,6 @@
 <p align="center">
 <a href="https://www.npmjs.com/package/jodit-vue" target="_blank"><img src="https://img.shields.io/npm/v/jodit-vue.svg?style=flat-square" alt="Version" /></a>
 <a href="https://npmcharts.com/compare/jodit-vue" target="_blank"><img src="https://img.shields.io/npm/dm/jodit-vue.svg?style=flat-square" alt="Downloads" /></a>
-<a href="https://unpkg.com/jodit-vue/dist/jodit-vue.min.js" target="_blank"><img src="https://img.badgesize.io/https://unpkg.com/jodit-vue/dist/jodit-vue.umd.js?style=flat-square&label=size" alt="Size" /></a>
-<a href="https://unpkg.com/jodit-vue/dist/jodit-vue.min.js" target="_blank"><img src="https://img.badgesize.io/https://unpkg.com/jodit-vue/dist/jodit-vue.min.js?label=gzip%20size&style=flat-square&compression=gzip" alt="Gzip Size" /></a>
 <a href="https://github.com/WendellAdriel/jodit-vue/blob/master/LICENSE" target="_blank"><img src="https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square" alt="License" /></a>
 </p>
 
