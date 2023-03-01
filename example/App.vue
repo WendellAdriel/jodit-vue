@@ -3,7 +3,7 @@
     <div id="container">
       <h1>Jodit Vue example</h1>
       <jodit-editor
-        :value="content"
+        :model-value="content"
         :buttons="buttons"
         :plugins="plugins"
       />
@@ -16,9 +16,9 @@ import { JoditEditor } from '../src/wrapper'
 
 export default {
   name: 'App',
-  components: {
-    JoditEditor
-  },
+
+  components: { JoditEditor },
+
   data () {
     return {
       content: '<p>Hello Jodit Vue</p>',
@@ -28,7 +28,7 @@ export default {
           name: 'example',
           callback: function (editor) {
             editor.events.on('afterInit', function () {
-              console.warn('Example plugin has beed initialized, check Jodit documentation for more details.')
+              console.warn('Example plugin has been initialized, check Jodit documentation for more details.')
             })
           }
         }
