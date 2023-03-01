@@ -1,19 +1,30 @@
-# Jodit Vue
+<div align="center">
+    <p>
+        <h1>Jodit Vue</h1>
+        Vue Wrapper for the <a href="https://github.com/xdan/jodit" target="_blank">Jodit Editor</a>
+    </p>
+</div>
 
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/WendellAdriel/jodit-vue/blob/master/LICENSE)
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+<p align="center">
+<a href="https://github.com/WendellAdriel/jodit-vue/blob/master/LICENSE" target="_blank"><img src="https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square" alt="License" /></a>
+<img src="https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square" alt="Contributors" />
+<a href="https://www.npmjs.com/package/jodit-vue" target="_blank"><img src="https://img.shields.io/npm/v/jodit-vue.svg?style=flat-square" alt="Version" /></a>
+<a href="https://npmcharts.com/compare/jodit-vue" target="_blank"><img src="https://img.shields.io/npm/dm/jodit-vue.svg?style=flat-square" alt="Downloads" /></a>
+<a href="https://unpkg.com/jodit-vue/dist/jodit-vue.min.js" target="_blank"><img src="https://img.badgesize.io/https://unpkg.com/jodit-vue/dist/jodit-vue.umd.js?style=flat-square&label=size" alt="Size" /></a>
+<a href="https://unpkg.com/jodit-vue/dist/jodit-vue.min.js" target="_blank"><img src="https://img.badgesize.io/https://unpkg.com/jodit-vue/dist/jodit-vue.min.js?label=gzip%20size&style=flat-square&compression=gzip" alt="Gzip Size" /></a>
+</p>
 
-[![version][version-badge]][package]
-[![downloads][downloads-badge]][npmcharts]
-[![size][size-badge]][unpkg-dist] [![gzip size][gzip-badge]][unpkg-dist]
-
-[![Watch on GitHub][github-watch-badge]][github-watch]
-[![Star on GitHub][github-star-badge]][github-star]
-[![Tweet][twitter-badge]][twitter]
-
-Vue Wrapper for the **[Jodit Editor](https://github.com/xdan/jodit)**
+<p align="center">
+<a href="https://github.com/WendellAdriel/jodit-vue/watchers" target="_blank"><img src="https://img.shields.io/github/watchers/WendellAdriel/jodit-vue.svg?style=social" alt="Watch on GitHub" /></a>
+<a href="https://github.com/WendellAdriel/jodit-vue/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/WendellAdriel/jodit-vue.svg?style=social" alt="Star on GitHub" /></a>
+<a href="https://twitter.com/intent/tweet?text=Check%20out%20jodit-vue!%20https://github.com/WendellAdriel/jodit-vue%20%F0%9F%91%8D" target="_blank"><img src="https://img.shields.io/twitter/url/https/github.com/WendellAdriel/jodit-vue.svg?style=social" alt="Tweet" /></a>
+</p>
 
 ## How to use
+
+> Use version 2.* for Vue 2
+>
+> Use version 3.* for Vue 3
 
 Install **Jodit Vue**:
 
@@ -198,17 +209,3 @@ Check Jodit [documentation](https://github.com/xdan/jodit#create-plugin) and [ex
 
 - [Wendell Adriel](https://github.com/WendellAdriel)
 - [All Contributors](https://github.com/WendellAdriel/jodit-vue/contributors)
-
-[downloads-badge]: https://img.shields.io/npm/dm/jodit-vue.svg?style=flat-square
-[npmcharts]: http://npmcharts.com/compare/jodit-vue
-[version-badge]: https://img.shields.io/npm/v/jodit-vue.svg?style=flat-square
-[package]: https://www.npmjs.com/package/jodit-vue
-[size-badge]: http://img.badgesize.io/https://unpkg.com/jodit-vue/dist/jodit-vue.umd.js?style=flat-square&label=size
-[unpkg-dist]: https://unpkg.com/jodit-vue/dist/jodit-vue.min.js
-[gzip-badge]: http://img.badgesize.io/https://unpkg.com/jodit-vue/dist/jodit-vue.min.js?label=gzip%20size&style=flat-square&compression=gzip
-[github-watch-badge]: https://img.shields.io/github/watchers/WendellAdriel/jodit-vue.svg?style=social
-[github-watch]: https://github.com/WendellAdriel/jodit-vue/watchers
-[github-star-badge]: https://img.shields.io/github/stars/WendellAdriel/jodit-vue.svg?style=social
-[github-star]: https://github.com/WendellAdriel/jodit-vue/stargazers
-[twitter]: https://twitter.com/intent/tweet?text=Check%20out%20jodit-vue!%20https://github.com/WendellAdriel/jodit-vue%20%F0%9F%91%8D
-[twitter-badge]: https://img.shields.io/twitter/url/https/github.com/WendellAdriel/jodit-vue.svg?style=social
