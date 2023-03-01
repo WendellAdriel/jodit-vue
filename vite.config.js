@@ -23,14 +23,15 @@ const formats = {
 
 /** @type {import('rollup').RollupOptions} */
 const baseConfig = {
-  external: ['jodit'],
+  external: ['jodit', 'vue'],
   input: 'src/wrapper.js',
   output: {
     name: 'JoditVue',
     exports: 'named',
     sourceMap: 'inline',
     globals: {
-      jodit: 'Jodit'
+      jodit: 'Jodit',
+      vue: 'Vue'
     }
   },
   plugins: [
@@ -75,8 +76,12 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, '/src/wrapper.js'),
       name: 'JoditVue',
-      fileName: (format) => `my-lib.${format}.js`
+      fileName: (format) => `jodit-vue.${format}.js`
     }
+  },
+  plugins: [vue()],
+  output: {
+    exports: 'named'
   },
   rollupOptions: config
 })
