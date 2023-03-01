@@ -5,6 +5,7 @@ import resolve from '@rollup/plugin-node-resolve'
 import vue from '@vitejs/plugin-vue'
 import buble from '@rollup/plugin-buble'
 import { terser } from 'rollup-plugin-terser'
+import { defineConfig } from 'vite'
 
 function getFilename (filename, minify = false) {
   const dirname = path.dirname(filename)
@@ -69,4 +70,6 @@ const config = Object.entries(formats).reduce((acc, [format, filename]) => {
   return acc
 }, [])
 
-export default config
+export default defineConfig({
+  rollupOptions: config
+})
