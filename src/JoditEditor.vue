@@ -49,8 +49,8 @@ export default {
       })
     }
     this.editor = new Jodit(this.$el, this.editorConfig)
-    this.editor.value = this.value
-    this.editor.events.on('change', newValue => this.$emit('input', newValue))
+    this.editor.value = this.modelValue
+    this.editor.events.on('change', newValue => this.$emit('update:modelValue', newValue))
   },
 
   beforeUnmount () {
