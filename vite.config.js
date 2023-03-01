@@ -2,9 +2,17 @@ import path from 'path'
 import pkg from './package.json'
 import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
-import vue from 'rollup-plugin-vue'
+import vue from '@vitejs/plugin-vue'
 import buble from '@rollup/plugin-buble'
 import { terser } from 'rollup-plugin-terser'
+
+function getFilename (filename, minify = false) {
+  const dirname = path.dirname(filename)
+  const extname = path.extname(filename)
+  const basename = path.basename(filename, extname)
+  filename = [basename, minify && '.min', extname].filter(Boolean).join('')
+  return path.join(dirname, filename)
+}
 
 const formats = {
   cjs: pkg.main,
@@ -62,11 +70,3 @@ const config = Object.entries(formats).reduce((acc, [format, filename]) => {
 }, [])
 
 export default config
-
-function getFilename (filename, minify = false) {
-  const dirname = path.dirname(filename)
-  const extname = path.extname(filename)
-  const basename = path.basename(filename, extname)
-  filename = [basename, minify && '.min', extname].filter(Boolean).join('')
-  return path.join(dirname, filename)
-}

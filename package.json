@@ -27,7 +27,7 @@
     "lint:fix": "eslint --color --fix --ext .js,.vue .",
     "clean": "del-cli ./dist",
     "prebuild": "yarn lint && yarn clean",
-    "build": "rollup --config ./rollup.config.js",
+    "build": "vite build --config vite.config.js",
     "prepublishOnly": "yarn lint && yarn build",
     "test": "jest"
   },
@@ -46,6 +46,7 @@
     "@rollup/plugin-buble": "^0.21.1",
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
+    "@vitejs/plugin-vue": "^4.0.0",
     "@vue/cli-plugin-babel": "~5.0.8",
     "@vue/cli-plugin-unit-jest": "~5.0.8",
     "@vue/cli-service": "~5.0.8",
@@ -66,7 +67,7 @@
     "jest-transform-stub": "^2.0.0",
     "rollup": "^1.16.7",
     "rollup-plugin-terser": "^5.1.1",
-    "rollup-plugin-vue": "next",
+    "vite": "^4.1.4",
     "vue": "^3.2.47"
   }
 }
