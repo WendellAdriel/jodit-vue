@@ -12,14 +12,14 @@
 </template>
 
 <script>
-import { JoditEditor } from '../src/wrapper'
+import { JoditEditor } from '../src/wrapper.js'
 
 export default {
   name: 'App',
 
   components: { JoditEditor },
 
-  data () {
+  data() {
     return {
       content: '<p>Hello Jodit Vue</p>',
       buttons: ['source', 'image', '|', 'bold', 'underline', 'italic'],
@@ -28,7 +28,9 @@ export default {
           name: 'example',
           callback: function (editor) {
             editor.events.on('afterInit', function () {
-              console.warn('Example plugin has been initialized, check Jodit documentation for more details.')
+              console.warn(
+                'Example plugin has been initialized, check Jodit documentation for more details.'
+              )
             })
           }
         }
@@ -54,6 +56,6 @@ export default {
 }
 
 .jodit-container:not(.jodit_inline) .jodit-wysiwyg p {
-    margin: 0;
+  margin: 0;
 }
 </style>
