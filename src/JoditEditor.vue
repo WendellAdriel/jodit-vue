@@ -21,7 +21,7 @@ export default {
   data: () => ({ editor: null }),
 
   computed: {
-    editorConfig () {
+    editorConfig() {
       const config = { ...this.config }
 
       if (this.buttons) {
@@ -37,23 +37,25 @@ export default {
   },
 
   watch: {
-    value (newValue) {
+    modelValue(newValue) {
       if (this.editor.value !== newValue) this.editor.value = newValue
     }
   },
 
-  mounted () {
+  mounted() {
     if (this.plugins.length) {
-      this.plugins.forEach(plugin => {
+      this.plugins.forEach((plugin) => {
         Jodit.plugins.add(plugin.name, plugin.callback)
       })
     }
-    this.editor = new Jodit(this.$el, this.editorConfig)
+    this.editor = Jodit.make(this.$el, this.editorConfig)
     this.editor.value = this.modelValue
-    this.editor.events.on('change', newValue => this.$emit('update:modelValue', newValue))
+    this.editor.events.on('change', (newValue) =>
+      this.$emit('update:modelValue', newValue)
+    )
   },
 
-  beforeUnmount () {
+  beforeUnmount() {
     this.editor.destruct()
   }
 }

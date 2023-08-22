@@ -2,22 +2,23 @@ import { config, mount } from '@vue/test-utils'
 import JoditEditor from '@/JoditEditor'
 import { Jodit } from 'jodit'
 config.showDeprecationWarnings = false
-jest.mock('Jodit')
+jest.mock('jodit')
 Jodit.mockImplementation(() => ({
   events: {
     on: jest.fn(),
-    fire: event => event
+    fire: (event) => event
   },
   plugins: {
     add: jest.fn()
   }
 }))
+Jodit.make = Jodit
 
 describe('JoditEditor', () => {
   it('It should update on `changed` event', () => {
     const wrapper = mount(JoditEditor, {
       propsData: {
-        value: 'Hello Jodit'
+        modelValue: 'Hello Jodit'
       },
       attachToDocument: true
     })
@@ -28,23 +29,23 @@ describe('JoditEditor', () => {
   it('It should set new value to editor', async () => {
     const wrapper = mount(JoditEditor, {
       propsData: {
-        value: 'Hello Jodit'
+        modelValue: 'Hello Jodit'
       },
       attachToDocument: true
     })
-    await wrapper.setProps({ value: 'Hey Jodit' })
+    await wrapper.setProps({ modelValue: 'Hey Jodit' })
     expect(wrapper.vm.editor.value).toBe('Hey Jodit')
   })
 
   it('It should set plugins to editor', async () => {
     const plugin = {
       name: 'example',
-      callback: () => { }
+      callback: () => {}
     }
     // eslint-disable-next-line no-unused-vars
     const wrapper = mount(JoditEditor, {
       propsData: {
-        value: 'Hello Jodit',
+        modelValue: 'Hello Jodit',
         plugins: [plugin]
       },
       attachToDocument: true

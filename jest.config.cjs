@@ -1,16 +1,15 @@
+/* eslint-env node */
 'use strict'
 
 module.exports = {
   moduleFileExtensions: ['js', 'jsx', 'json', 'vue'],
   transform: {
-    '^.+\\.vue$': 'vue-jest',
+    '^.+\\.vue$': '@vue/vue3-jest',
     '.+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$':
       'jest-transform-stub',
     '^.+\\.jsx?$': 'babel-jest'
   },
-  transformIgnorePatterns: [
-    'node_modules/(?!(babel-jest|jest-vue-preprocessor)/)'
-  ],
+  transformIgnorePatterns: ['node_modules/(?!(babel-jest)/)'],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
     '^.+.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$':
@@ -20,7 +19,11 @@ module.exports = {
   testMatch: [
     '**/tests/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)'
   ],
-  testURL: 'http://localhost/',
+  testEnvironment: 'jsdom',
+  testEnvironmentOptions: {
+    url: 'http://localhost/',
+    customExportConditions: ['node', 'node-addons']
+  },
   watchPlugins: [
     'jest-watch-typeahead/filename',
     'jest-watch-typeahead/testname'
