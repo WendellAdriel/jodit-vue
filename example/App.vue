@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { JoditEditor } from '../src/wrapper.js'
+import { JoditEditor } from '../src/wrapper'
 
 export default {
   name: 'App',
